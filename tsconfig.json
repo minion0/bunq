@@ -6,7 +6,7 @@
     "target": "ES5",
     "lib": ["es2015", "dom"],
     "noEmit": false,
-    "allowJs": true,
+    "allowJs": false,
     "types": ["node"],
     "module": "commonjs",
     "noImplicitAny": false,
@@ -16,9 +16,10 @@
   },
   "include": [
     "./",
-    "./src/"
+    "./src"
   ],
   "exclude": [
-    "node_modules/*"
+    "node_modules",
+    "dist"
   ]
 }
